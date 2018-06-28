@@ -1,15 +1,16 @@
 
-from signedjson.sign import verify_signed_json
+import argparse
+import json
+import logging
+import pprint
+import sys
+import urllib2
+
+import dns.resolver
 from signedjson.key import decode_verify_key_bytes, write_signing_keys
+from signedjson.sign import verify_signed_json
 from unpaddedbase64 import decode_base64
 
-import urllib2
-import json
-import sys
-import dns.resolver
-import pprint
-import argparse
-import logging
 
 def get_targets(server_name):
     if ":" in server_name:
@@ -68,4 +69,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

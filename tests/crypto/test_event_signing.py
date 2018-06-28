@@ -14,15 +14,12 @@
 # limitations under the License.
 
 
+import nacl.signing
 from tests import unittest
-
-from synapse.events.builder import EventBuilder
-from synapse.crypto.event_signing import add_hashes_and_signatures
-
 from unpaddedbase64 import decode_base64
 
-import nacl.signing
-
+from synapse.crypto.event_signing import add_hashes_and_signatures
+from synapse.events.builder import EventBuilder
 
 # Perform these tests using given secret key so we get entirely deterministic
 # signatures output that we can test against.

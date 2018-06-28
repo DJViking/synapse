@@ -1,6 +1,6 @@
-from synapse.api.ratelimiting import Ratelimiter
-
 from tests import unittest
+
+from synapse.api.ratelimiting import Ratelimiter
 
 
 class TestRatelimiter(unittest.TestCase):

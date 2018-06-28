@@ -17,7 +17,7 @@ from tests import unittest
 
 from synapse.api.errors import SynapseError
 from synapse.server import HomeServer
-from synapse.types import UserID, RoomAlias, GroupID
+from synapse.types import GroupID, RoomAlias, UserID
 
 mock_homeserver = HomeServer(hostname="my.domain")
 

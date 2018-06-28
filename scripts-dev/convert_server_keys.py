@@ -1,13 +1,14 @@
+import hashlib
+import json
+import sys
+import time
+
 import psycopg2
 import yaml
-import sys
-import json
-import time
-import hashlib
-from unpaddedbase64 import encode_base64
+from canonicaljson import encode_canonical_json
 from signedjson.key import read_signing_keys
 from signedjson.sign import sign_json
-from canonicaljson import encode_canonical_json
+from unpaddedbase64 import encode_base64
 
 
 def select_v1_keys(connection):

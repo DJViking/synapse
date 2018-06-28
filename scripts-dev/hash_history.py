@@ -1,15 +1,19 @@
-from synapse.storage.pdu import PduStore
-from synapse.storage.signatures import SignatureStore
-from synapse.storage._base import SQLBaseStore
-from synapse.federation.units import Pdu
-from synapse.crypto.event_signing import (
-    add_event_pdu_content_hash, compute_pdu_event_reference_hash
-)
-from synapse.api.events.utils import prune_pdu
-from unpaddedbase64 import encode_base64, decode_base64
-from canonicaljson import encode_canonical_json
 import sqlite3
 import sys
+
+from canonicaljson import encode_canonical_json
+from unpaddedbase64 import decode_base64, encode_base64
+
+from synapse.api.events.utils import prune_pdu
+from synapse.crypto.event_signing import (
+    add_event_pdu_content_hash,
+    compute_pdu_event_reference_hash,
+)
+from synapse.federation.units import Pdu
+from synapse.storage._base import SQLBaseStore
+from synapse.storage.pdu import PduStore
+from synapse.storage.signatures import SignatureStore
+
 
 class Store(object):
     _get_pdu_tuples = PduStore.__dict__["_get_pdu_tuples"]

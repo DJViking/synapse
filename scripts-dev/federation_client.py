@@ -18,17 +18,16 @@
 from __future__ import print_function
 
 import argparse
+import base64
+import json
+import sys
 from urlparse import urlparse, urlunparse
 
 import nacl.signing
-import json
-import base64
 import requests
-import sys
-
-from requests.adapters import HTTPAdapter
 import srvlookup
 import yaml
+from requests.adapters import HTTPAdapter
 
 # uncomment the following to enable debug logging of http requests
 #from httplib import HTTPConnection

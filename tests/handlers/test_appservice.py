@@ -13,13 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from twisted.internet import defer
-from .. import unittest
+from mock import Mock
+
 from tests.utils import MockClock
+
+from twisted.internet import defer
 
 from synapse.handlers.appservice import ApplicationServicesHandler
 
-from mock import Mock
+from .. import unittest
 
 
 class AppServiceHandlerTestCase(unittest.TestCase):

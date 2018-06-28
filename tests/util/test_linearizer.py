@@ -13,13 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from synapse.util import logcontext, Clock
+from six.moves import range
+
 from tests import unittest
 
 from twisted.internet import defer, reactor
 
+from synapse.util import Clock, logcontext
 from synapse.util.async import Linearizer
-from six.moves import range
 
 
 class LinearizerTestCase(unittest.TestCase):

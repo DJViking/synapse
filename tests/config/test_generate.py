@@ -18,8 +18,9 @@ import re
 import shutil
 import tempfile
 
-from synapse.config.homeserver import HomeServerConfig
 from tests import unittest
+
+from synapse.config.homeserver import HomeServerConfig
 
 
 class ConfigGenerationTestCase(unittest.TestCase):

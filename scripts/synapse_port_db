@@ -15,23 +15,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from twisted.internet import defer, reactor
-from twisted.enterprise import adbapi
-
-from synapse.storage._base import LoggingTransaction, SQLBaseStore
-from synapse.storage.engines import create_engine
-from synapse.storage.prepare_database import prepare_database
-
 import argparse
 import curses
 import logging
 import sys
 import time
 import traceback
-import yaml
 
 from six import string_types
 
+import yaml
+
+from twisted.enterprise import adbapi
+from twisted.internet import defer, reactor
+
+from synapse.storage._base import LoggingTransaction, SQLBaseStore
+from synapse.storage.engines import create_engine
+from synapse.storage.prepare_database import prepare_database
 
 logger = logging.getLogger("synapse_port_db")
 

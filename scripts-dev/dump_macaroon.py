@@ -1,7 +1,8 @@
 #!/usr/bin/env python2
 
-import pymacaroons
 import sys
+
+import pymacaroons
 
 if len(sys.argv) == 1:
     sys.stderr.write("usage: %s macaroon [key]\n" % (sys.argv[0],))

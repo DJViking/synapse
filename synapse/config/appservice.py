@@ -12,16 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from ._base import Config, ConfigError
-
-from synapse.appservice import ApplicationService
-from synapse.types import UserID
-
-import yaml
 import logging
 
 from six import string_types
 from six.moves.urllib import parse as urlparse
+
+import yaml
+
+from synapse.appservice import ApplicationService
+from synapse.types import UserID
+
+from ._base import Config, ConfigError
 
 logger = logging.getLogger(__name__)
 

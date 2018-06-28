@@ -15,9 +15,11 @@
 import os.path
 import shutil
 import tempfile
+
 import yaml
-from synapse.config.homeserver import HomeServerConfig
 from tests import unittest
+
+from synapse.config.homeserver import HomeServerConfig
 
 
 class ConfigLoadingTestCase(unittest.TestCase):

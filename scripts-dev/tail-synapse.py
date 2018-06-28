@@ -1,8 +1,9 @@
-import requests
 import collections
+import json
 import sys
 import time
-import json
+
+import requests
 
 Entry = collections.namedtuple("Entry", "name position rows")
 

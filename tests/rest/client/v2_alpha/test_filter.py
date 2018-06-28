@@ -13,16 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from twisted.internet import defer
-
 from tests import unittest
 
-from synapse.rest.client.v2_alpha import filter
-
-from synapse.api.errors import Codes
+from twisted.internet import defer
 
 import synapse.types
-
+from synapse.api.errors import Codes
+from synapse.rest.client.v2_alpha import filter
 from synapse.types import UserID
 
 from ....utils import MockHttpResource, setup_test_homeserver

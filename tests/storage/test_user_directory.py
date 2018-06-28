@@ -13,12 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from tests import unittest
+from tests.utils import setup_test_homeserver
+
 from twisted.internet import defer
 
 from synapse.storage import UserDirectoryStore
 from synapse.storage.roommember import ProfileInfo
-from tests import unittest
-from tests.utils import setup_test_homeserver
 
 ALICE = "@alice:a"
 BOB = "@bob:b"

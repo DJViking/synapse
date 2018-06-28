@@ -1,10 +1,11 @@
-from synapse.crypto.event_signing import *
-from unpaddedbase64 import encode_base64
-
 import argparse
 import hashlib
-import sys
 import json
+import sys
+
+from unpaddedbase64 import encode_base64
+
+from synapse.crypto.event_signing import *
 
 
 class dictobj(dict):
@@ -47,4 +48,3 @@ def main():
 
 if __name__=="__main__":
     main()
-

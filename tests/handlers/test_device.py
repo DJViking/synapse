@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+from tests import unittest, utils
+
 from twisted.internet import defer
 
 import synapse.api.errors
 import synapse.handlers.device
-
 import synapse.storage
-from tests import unittest, utils
 
 user1 = "@boris:aaa"
 user2 = "@theresa:bbb"

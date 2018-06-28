@@ -1,12 +1,12 @@
-from synapse.events import FrozenEvent
-from synapse.api.auth import Auth
-
-from mock import Mock
-
 import argparse
 import itertools
 import json
 import sys
+
+from mock import Mock
+
+from synapse.api.auth import Auth
+from synapse.events import FrozenEvent
 
 
 def check_auth(auth, auth_chain, events):

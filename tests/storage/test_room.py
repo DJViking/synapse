@@ -15,12 +15,12 @@
 
 
 from tests import unittest
+from tests.utils import setup_test_homeserver
+
 from twisted.internet import defer
 
 from synapse.api.constants import EventTypes
-from synapse.types import UserID, RoomID, RoomAlias
-
-from tests.utils import setup_test_homeserver
+from synapse.types import RoomAlias, RoomID, UserID
 
 
 class RoomStoreTestCase(unittest.TestCase):

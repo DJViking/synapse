@@ -13,10 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from twisted.internet import defer
-
 import tests.unittest
 import tests.utils
+
+from twisted.internet import defer
 
 
 class ClientIpStoreTestCase(tests.unittest.TestCase):

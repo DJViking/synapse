@@ -15,9 +15,9 @@
 
 
 from tests import unittest
-from twisted.internet import defer
-
 from tests.utils import setup_test_homeserver
+
+from twisted.internet import defer
 
 
 class RegistrationStoreTestCase(unittest.TestCase):

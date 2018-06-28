@@ -1,7 +1,9 @@
 #! /usr/bin/python
 
 import ast
+
 import yaml
+
 
 class DefinitionVisitor(ast.NodeVisitor):
     def __init__(self):

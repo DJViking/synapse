@@ -15,12 +15,12 @@
 
 
 from tests import unittest
+from tests.utils import setup_test_homeserver
+
 from twisted.internet import defer
 
 from synapse.storage.directory import DirectoryStore
-from synapse.types import RoomID, RoomAlias
-
-from tests.utils import setup_test_homeserver
+from synapse.types import RoomAlias, RoomID
 
 
 class DirectoryStoreTestCase(unittest.TestCase):

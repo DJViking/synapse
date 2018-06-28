@@ -14,8 +14,9 @@
 # limitations under the License.
 import sys
 
-from synapse.util.logformatter import LogFormatter
 from tests import unittest
+
+from synapse.util.logformatter import LogFormatter
 
 
 class TestException(Exception):

@@ -13,15 +13,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-from functools import partial
 import logging
+from functools import partial
 
 import mock
+
+from tests import unittest
+
+from twisted.internet import defer
+
 from synapse.api.errors import SynapseError
 from synapse.util import logcontext
-from twisted.internet import defer
 from synapse.util.caches import descriptors
-from tests import unittest
 
 logger = logging.getLogger(__name__)
 

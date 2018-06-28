@@ -14,14 +14,15 @@
 # limitations under the License.
 
 import mock
-from synapse.api import errors
+
+from tests import unittest, utils
+
 from twisted.internet import defer
 
 import synapse.api.errors
 import synapse.handlers.e2e_keys
-
 import synapse.storage
-from tests import unittest, utils
+from synapse.api import errors
 
 
 class E2eKeysHandlerTestCase(unittest.TestCase):

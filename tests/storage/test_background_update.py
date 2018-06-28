@@ -1,9 +1,9 @@
-from tests import unittest
-from twisted.internet import defer
+from mock import Mock
 
+from tests import unittest
 from tests.utils import setup_test_homeserver
 
-from mock import Mock
+from twisted.internet import defer
 
 
 class BackgroundUpdateTestCase(unittest.TestCase):

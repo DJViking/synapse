@@ -14,15 +14,15 @@
 # limitations under the License.
 
 
-from tests import unittest
-from twisted.internet import defer
+from collections import OrderedDict
 
 from mock import Mock
 
-from collections import OrderedDict
+from tests import unittest
+
+from twisted.internet import defer
 
 from synapse.server import HomeServer
-
 from synapse.storage._base import SQLBaseStore
 from synapse.storage.engines import create_engine
 

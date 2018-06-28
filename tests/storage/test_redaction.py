@@ -14,15 +14,15 @@
 # limitations under the License.
 
 
+from mock import Mock
+
 from tests import unittest
+from tests.utils import setup_test_homeserver
+
 from twisted.internet import defer
 
 from synapse.api.constants import EventTypes, Membership
-from synapse.types import UserID, RoomID
-
-from tests.utils import setup_test_homeserver
-
-from mock import Mock
+from synapse.types import RoomID, UserID
 
 
 class RedactionTestCase(unittest.TestCase):

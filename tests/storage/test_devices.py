@@ -13,11 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import tests.unittest
+import tests.utils
+
 from twisted.internet import defer
 
 import synapse.api.errors
-import tests.unittest
-import tests.utils
 
 
 class DeviceStoreTestCase(tests.unittest.TestCase):

@@ -1,12 +1,13 @@
-from synapse.rest.client.transactions import HttpTransactionCache
-from synapse.rest.client.transactions import CLEANUP_PERIOD_MS
-from twisted.internet import defer, reactor
 from mock import Mock, call
 
-from synapse.util import Clock
-from synapse.util.logcontext import LoggingContext
 from tests import unittest
 from tests.utils import MockClock
+
+from twisted.internet import defer, reactor
+
+from synapse.rest.client.transactions import CLEANUP_PERIOD_MS, HttpTransactionCache
+from synapse.util import Clock
+from synapse.util.logcontext import LoggingContext
 
 
 class HttpTransactionCacheTestCase(unittest.TestCase):

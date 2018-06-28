@@ -1,14 +1,15 @@
 import json
 import re
 
+from tests import unittest
+from tests.server import make_request, setup_test_homeserver
+
 from twisted.internet.defer import Deferred
 from twisted.test.proto_helpers import MemoryReactorClock
 
-from synapse.util import Clock
 from synapse.api.errors import Codes, SynapseError
 from synapse.http.server import JsonResource
-from tests import unittest
-from tests.server import make_request, setup_test_homeserver
+from synapse.util import Clock
 
 
 class JsonResourceTests(unittest.TestCase):

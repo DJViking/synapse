@@ -1,12 +1,15 @@
-from twisted.python import failure
+import json
 
-from synapse.rest.client.v2_alpha.register import RegisterRestServlet
-from synapse.api.errors import SynapseError, InteractiveAuthIncompleteError
-from twisted.internet import defer
 from mock import Mock
+
 from tests import unittest
 from tests.utils import mock_getRawHeaders
-import json
+
+from twisted.internet import defer
+from twisted.python import failure
+
+from synapse.api.errors import InteractiveAuthIncompleteError, SynapseError
+from synapse.rest.client.v2_alpha.register import RegisterRestServlet
 
 
 class RegisterRestServletTestCase(unittest.TestCase):

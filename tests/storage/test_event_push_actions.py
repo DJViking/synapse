@@ -13,11 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from twisted.internet import defer
+from mock import Mock
 
 import tests.unittest
 import tests.utils
-from mock import Mock
+
+from twisted.internet import defer
 
 USER_ID = "@user:example.com"
 

@@ -14,10 +14,10 @@
 # limitations under the License.
 
 import signedjson.key
-from twisted.internet import defer
-
 import tests.unittest
 import tests.utils
+
+from twisted.internet import defer
 
 
 class KeyStoreTestCase(tests.unittest.TestCase):
